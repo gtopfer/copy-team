@@ -1,0 +1,20 @@
+# =============================================================================
+# copy-team — .gitignore
+# =============================================================================
+
+# Contexto do cliente (não versionar — dados sensíveis de produto)
+input/
+
+# Copies gerados pelos agentes (output por projeto — não versionar por padrão)
+output/
+OLD/
+
+# Claude Code — settings locais da máquina
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
