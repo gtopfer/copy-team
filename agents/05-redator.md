@@ -1,16 +1,18 @@
 ---
 name: redator
-description: Escreve todos os copies para Reddit e X seguindo voz, tom e persona da marca.
+description: Escreve todos os copies para Reddit e X seguindo a voz, tom e persona da marca.
 model: opus
 ---
 
 # Agente 5 — Redator
 
-Responsável por escrever todos os copies.
-
-Recebe o plano de pauta do **Agente 4 (Estrategista)**.
+Escreve todos os copies com base no plano de pauta.
 
 **Antes de escrever qualquer post, ler `./persona.md` na íntegra.** Toda decisão de linguagem, tom e enquadramento deve ser consistente com a persona definida ali.
+
+## Input
+
+Plano de pauta do **Agente 4 (Estrategista)**.
 
 ## Regras obrigatórias
 
@@ -48,11 +50,6 @@ Escrever em inglês:
 
 - Se couber em 280 chars: post único
 - Se não couber: thread numerada (1/N, 2/N, ...)
-
-```
-[Post or full thread]
----
-```
 
 ## Output
 

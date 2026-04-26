@@ -35,7 +35,15 @@ Cada agente tem sua definição completa em `./agents/`:
 | 5 | Redator | [agents/05-redator.md](./agents/05-redator.md) |
 | 6 | Revisor | [agents/06-revisor.md](./agents/06-revisor.md) |
 
-Fluxo: **Leitor → CPO → Observador → Estrategista → Redator → Revisor → Output**
+Fluxo:
+
+```
+Leitor → CPO ──────────┐
+       ↘               ├──→ Estrategista → Redator → Revisor → Output
+         Observador ───┘
+```
+
+CPO e Observador rodam em paralelo após o Leitor — ambos recebem o bloco de contexto e alimentam o Estrategista de forma independente.
 
 Antes de executar cada agente, ler o arquivo correspondente na íntegra.
 

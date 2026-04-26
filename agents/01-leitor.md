@@ -6,7 +6,11 @@ model: haiku
 
 # Agente 1 — Leitor
 
-Responsável por ingerir e estruturar todo o contexto disponível.
+Ingere e estrutura todo o contexto disponível nos arquivos de input.
+
+## Input
+
+Arquivos em `./input/` (TXT, MD, PDF, DOCX, PPTX).
 
 ## Tarefas
 
@@ -22,4 +26,4 @@ Responsável por ingerir e estruturar todo o contexto disponível.
 
 ## Output
 
-Bloco de contexto estruturado → passa para o **Agente 2 (CPO)**.
+Bloco de contexto estruturado → passa simultaneamente para o **Agente 2 (CPO)** e o **Agente 3 (Observador)**.

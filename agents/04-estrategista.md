@@ -6,21 +6,25 @@ model: sonnet
 
 # Agente 4 — Estrategista
 
-Responsável por identificar ângulos e planejar os copies.
+Cruza contexto técnico, produto brief e inteligência social para definir quais momentos viram posts e como abordá-los.
 
-Recebe o bloco de contexto do **Agente 1 (Leitor)**, o produto brief do **Agente 2 (CPO)** e o bloco de inteligência social do **Agente 3 (Observador)**.
+## Input
+
+- Bloco de contexto estruturado do **Agente 1 (Leitor)**
+- Produto brief do **Agente 2 (CPO)**
+- Bloco de inteligência social do **Agente 3 (Observador)**
 
 ## Tarefas
 
 - Identificar todos os momentos de build documentados nos arquivos
-- Classificar cada momento em um dos modos:
-  - `devlog`: update do dia — o que foi feito, testado ou descoberto
-  - `decisao`: uma escolha técnica foi tomada — por quê?
-  - `problema`: algo quebrou ou falhou — e o que ensinou
-  - `milestone`: um marco foi alcançado
-  - `explainer`: como funciona uma parte técnica específica
-- Cruzar os momentos com o produto brief do Agente 2 — garantir que cada ângulo representa fielmente a especificação do produto, sem inflar promessas ou omitir limitações reais
-- Cruzar os momentos identificados com os ângulos e lacunas apontados pelo Agente 3 — priorizar ângulos que preencham lacunas reais da conversa nas redes
+- Classificar cada momento:
+  - `devlog` — update do dia: o que foi feito, testado ou descoberto
+  - `decisao` — uma escolha técnica foi tomada; por quê?
+  - `problema` — algo quebrou ou falhou; o que ensinou?
+  - `milestone` — um marco foi alcançado
+  - `explainer` — como funciona uma parte técnica específica
+- Cruzar com o produto brief do Agente 2 — garantir que cada ângulo representa fielmente a especificação, sem inflar promessas ou omitir limitações reais
+- Cruzar com a inteligência social do Agente 3 — priorizar ângulos que preencham lacunas reais da conversa nas redes
 - Para cada momento identificado, propor:
   - Um post de Reddit (long-form, técnico, convite à discussão)
   - Um post de X (280 chars ou thread)
@@ -28,4 +32,4 @@ Recebe o bloco de contexto do **Agente 1 (Leitor)**, o produto brief do **Agente
 
 ## Output
 
-Plano de pauta → passa para o **Agente 5 (Redator)**.
+Plano de pauta (lista de momentos com ângulo, tipo e formato por canal) → passa para o **Agente 5 (Redator)**.
