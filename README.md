@@ -170,3 +170,8 @@ _Source: files in ./input/_
     ├── reddit/         ← posts gerados para Reddit
     └── x/              ← posts gerados para X
 ```
+
+
+## Licença
+
+Este projeto está licenciado sob a [GNU General Public License v3.0](LICENSE).
